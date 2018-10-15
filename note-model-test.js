@@ -6,6 +6,15 @@ showNote();
 
 function addNoteText() {
     var note = new Note();
-    expect.isTrue(note.add("My fav language is JS") === "My fav language is JS");
+    note.add("My fav language is JS")
+    expect.isTrue(note._noteList[0] === "My fav language is JS");
 }; 
 addNoteText();
+
+function displayNotes() {
+    var note = new Note();
+    note.add("My fav language is JS")
+    // console.log(note.displayNotes()[0])
+    expect.isTrue(note.displayNotes()[0] === "My fav language is JS");
+}; 
+displayNotes();
