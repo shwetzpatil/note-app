@@ -1,3 +1,4 @@
+// test framework library
 var expect = {
     isTrue: function(value) {
         if (!value) {
